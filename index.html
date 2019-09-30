@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Week 10 Practice</title>
+    <script type="text/javascript" src="js/script.js" defer></script>
+</head>
+<body>
+    <h1>Week 10 Practice</h1>
+    <h3>Problem 2:</h3>
+    <p>
+        Create a program where a button acts like a counter. Everytime an user clicks on it, it counts up (starting from 0). Make sure you use closures (create two functions, one outer and one inner).
+    </p>
+    <button id="counterButton">Click me</button>
+
+
+
+    <h3>Problem 3:</h3>
+    <p>
+        Create a program with a button. When an user clicks on the button, the program executes an alert stating “the user has clicked!”
+    </p>
+    <button id="clickAlert">Click me</button>
+
+
+    <h3>Problem 4:</h3>
+    <p>
+        Create a form where the user is asked to enter their first and last name. Also, create a reset button, so that when an user clicks reset, the form is reset(their input is deleted).
+    </p>
+    <form id="form">
+        <input type="text" name="firstName" id="firtsName" placeholder="First Name">
+        <input type="text" name="lastName" id="lastName" placeholder="last Name">
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <button type="" id="jsReset">JSReset</button>
+
+    </form>
+
+
+
+    <h3>Problem 5:</h3>
+    <p id="demo"></p>
+
+    <script>
+    const addalert = (msg) => {
+        document.getElementById("demo").innerHTML = msg;
+    }
+    try {
+        addalert("Welcome guest!");
+    }
+    catch(err) {
+        document.getElementById("demo").innerHTML = err.message;
+    }
+    </script>
+
+</body>
+</html>
